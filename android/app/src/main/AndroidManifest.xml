@@ -1,8 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- NHTSA lookups (VIN, recalls, ratings, complaints) need HTTPS in release. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
-        android:label="milepost_app"
+        android:label="Milepost"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:enableOnBackInvokedCallback="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"

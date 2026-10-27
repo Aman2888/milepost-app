@@ -1,4 +1,4 @@
-package com.example.milepost_app
+package com.milepost.app
 
 import io.flutter.embedding.android.FlutterActivity
 
